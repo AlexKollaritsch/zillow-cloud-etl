@@ -2,7 +2,7 @@ import os
 import requests
 import boto3
 from datetime import datetime
-from boto3.session import Config
+from botocore.config import Config
 
 ZILLOW_URL = "https://files.zillowstatic.com/research/public_csvs/zhvi/City_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv"
 BUCKET = "zillow-data-lake-alex"
