@@ -4,6 +4,8 @@ import json
 import requests
 import boto3
 from datetime import datetime, timezone
+from dotenv import load_dotenv
+load_dotenv()
 
 FRED_API_KEY = os.getenv("FRED_API_KEY")
 FRED_API_BASE = "https://api.stlouisfed.org/fred/series/observations"
