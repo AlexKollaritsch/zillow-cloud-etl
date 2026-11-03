@@ -56,7 +56,7 @@ def upload_to_s3(filename):
     print(f"Uploading {filename} to S3...")
     s3 = boto3.client("s3")
 
-    key = f"bronze/fred/live/{filename}"
+    key = f"bronze/macro/live/{filename}"
     s3.upload_file(filename, BUCKET, key)
 
     print(f"Uploaded to s3://{BUCKET}/{key}")
